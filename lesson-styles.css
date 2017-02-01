@@ -1,6 +1,7 @@
 /* Basic resets */
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 ul {
@@ -10,4 +11,49 @@ ul {
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Grid*/
+
+.section {
+  background: #5da865;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.row {
+  /*Makes sure the first and last items line up with*/
+  margin: -2rem;
+  overflow: auto;
+}
+.grid-item {
+  width: calc(100% / 4 - 2rem - 2rem);
+  min-width: 8rem;
+  float: left;
+  margin: 2rem;
+}
+
+/*Profile*/
+
+.profile {
+  margin: 0;
+}
+
+.profile__username {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/*Prompt*/
+
+.prompt {
+  text-align: center;
 }
